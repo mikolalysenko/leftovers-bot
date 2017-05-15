@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Leftovers",
+  "version": "1.0",
+  "description": "FREE FOOD FROM THE INTERNET",
+  "background": {
+    "persistent": false,
+    "scripts": ["bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.picodash.com/explore/map*"],
+      "js": ["picodash.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "geolocation"
+  ]
+}
